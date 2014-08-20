@@ -51,7 +51,7 @@
 func main() {
     // open a new index
     mapping := bleve.NewIndexMapping()
-    index, err := bleve.Open("example.bleve", mapping)
+    index, err := bleve.New("example.bleve", mapping)
 
     // index some data
     err = index.Index(identifier, your_data)
