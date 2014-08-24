@@ -14,77 +14,20 @@ import (
 
 	"github.com/couchbaselabs/bleve/search"
 
-	// char filters
-	_ "github.com/couchbaselabs/bleve/analysis/char_filters/html_char_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/char_filters/regexp_char_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/char_filters/zero_width_non_joiner"
-
-	// analyzers
-	_ "github.com/couchbaselabs/bleve/analysis/analyzers/detect_lang_analyzer"
-	_ "github.com/couchbaselabs/bleve/analysis/analyzers/keyword_analyzer"
-	_ "github.com/couchbaselabs/bleve/analysis/analyzers/simple_analyzer"
-	_ "github.com/couchbaselabs/bleve/analysis/analyzers/standard_analyzer"
-
 	// token filters
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/apostrophe_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/cld2"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/edge_ngram_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/elision_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/keyword_marker_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/length_filter"
 	_ "github.com/couchbaselabs/bleve/analysis/token_filters/lower_case_filter"
 	_ "github.com/couchbaselabs/bleve/analysis/token_filters/ngram_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/stemmer_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/stop_tokens_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/truncate_token_filter"
-	_ "github.com/couchbaselabs/bleve/analysis/token_filters/unicode_normalize"
 
 	// tokenizers
-	_ "github.com/couchbaselabs/bleve/analysis/tokenizers/regexp_tokenizer"
 	_ "github.com/couchbaselabs/bleve/analysis/tokenizers/single_token"
-	_ "github.com/couchbaselabs/bleve/analysis/tokenizers/unicode_word_boundary"
-	_ "github.com/couchbaselabs/bleve/analysis/tokenizers/whitespace_tokenizer"
 
 	// date time parsers
 	_ "github.com/couchbaselabs/bleve/analysis/datetime_parsers/datetime_optional"
 	_ "github.com/couchbaselabs/bleve/analysis/datetime_parsers/flexible_go"
 
-	// languages
-	_ "github.com/couchbaselabs/bleve/analysis/language/ar"
-	_ "github.com/couchbaselabs/bleve/analysis/language/bg"
-	_ "github.com/couchbaselabs/bleve/analysis/language/ca"
-	_ "github.com/couchbaselabs/bleve/analysis/language/ckb"
-	_ "github.com/couchbaselabs/bleve/analysis/language/cs"
-	_ "github.com/couchbaselabs/bleve/analysis/language/da"
-	_ "github.com/couchbaselabs/bleve/analysis/language/de"
-	_ "github.com/couchbaselabs/bleve/analysis/language/el"
-	_ "github.com/couchbaselabs/bleve/analysis/language/en"
-	_ "github.com/couchbaselabs/bleve/analysis/language/es"
-	_ "github.com/couchbaselabs/bleve/analysis/language/eu"
-	_ "github.com/couchbaselabs/bleve/analysis/language/fa"
-	_ "github.com/couchbaselabs/bleve/analysis/language/fi"
-	_ "github.com/couchbaselabs/bleve/analysis/language/fr"
-	_ "github.com/couchbaselabs/bleve/analysis/language/ga"
-	_ "github.com/couchbaselabs/bleve/analysis/language/gl"
-	_ "github.com/couchbaselabs/bleve/analysis/language/hi"
-	_ "github.com/couchbaselabs/bleve/analysis/language/hu"
-	_ "github.com/couchbaselabs/bleve/analysis/language/hy"
-	_ "github.com/couchbaselabs/bleve/analysis/language/id"
-	_ "github.com/couchbaselabs/bleve/analysis/language/it"
-	_ "github.com/couchbaselabs/bleve/analysis/language/nl"
-	_ "github.com/couchbaselabs/bleve/analysis/language/no"
-	_ "github.com/couchbaselabs/bleve/analysis/language/porter"
-	_ "github.com/couchbaselabs/bleve/analysis/language/pt"
-	_ "github.com/couchbaselabs/bleve/analysis/language/ro"
-	_ "github.com/couchbaselabs/bleve/analysis/language/ru"
-	_ "github.com/couchbaselabs/bleve/analysis/language/sv"
-	_ "github.com/couchbaselabs/bleve/analysis/language/th"
-	_ "github.com/couchbaselabs/bleve/analysis/language/tr"
-
 	// kv stores
 	_ "github.com/couchbaselabs/bleve/index/store/boltdb"
 	_ "github.com/couchbaselabs/bleve/index/store/inmem"
-	_ "github.com/couchbaselabs/bleve/index/store/leveldb"
 )
 
 var bleveExpVar = expvar.NewMap("bleve")
